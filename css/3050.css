@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+
+body {
+  background-color: #EBEBEB;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo__texto {
+  margin: 1em;
+  font-size: 1.5em;
+}
+
+.slider {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.slides {
+  position: relative;
+
+}
+
+/* Hide the images by default */
+.slides__imgs {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slides__teste {
+  display: flex;
+}
+
+.slides__img--imgs {
+  margin-top: 1em;
+  width: 75%;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.galeria__cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+/* Number text (1/3 etc) */
+.slides__imgs--num {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.galeria {
+  display: flex;
+  justify-content: center;
+}
+
+.galeria:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.galeria__coluna {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.galeria__demo {
+  opacity: 0.6;
+}
+
+.active,
+.galeria__demo:hover {
+  opacity: 1;
+}
+
+.preço {
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.preço__texto {
+  font-family: 'Barlow', sans-serif;
+  color: #0ba360;
+  font-size: 1.5em;
+}
+
+.preço__parcel {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.2em;
+  padding-bottom: 0.3em;
+}
+
+.bnt__hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bnt__hero:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bnt__hero:focus {
+  outline: none;
+}
+
+.bnt__hero.bnt__anim {
+  background-image: linear-gradient(to right,
+      #0ba360,
+      #3cba92,
+      #30dd8a,
+      #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+
+.bnt__card {
+  width: 10em;
+  height: 3em;
+}
+
+.bnt__icon {
+  width: 1.8em;
+  float: left;
+  height: 1.8em;
+  padding-bottom: 0.1em;
+  padding-right: 0.5em;
+  text-align: center;
+}
+
+.form {
+  margin: 1em;
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.form__label {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5em;
+}
+
+.form__campo {
+  box-sizing: border-box;
+  padding: 0.375rem 0.75rem;
+  height: 2.5em;
+  width: 100%;
+  border: 2px solid #0ba36180;
+  border-radius: 5px;
+}
+
+.descrição {
+  font-size: 1.1em;
+  margin: 1em;
+}
+
+.descrição__titulo {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.descrição__list--titulo {
+  font-weight: bold;
+}
+
+.titulo__maior {
+  display: none;
+}
+
+.container {
+  border-radius: 10px;
+  margin-top: 1em;
+  padding: 1em;
+  margin: auto;
+  background-color: #FEFEFE;
+}
+
+.descrição__linha {
+  color: #2d2d2d;
+  margin: 1.5em;
+  border: none;
+  border-top: #2d2d2d3a solid 1px;
+}
+.compra__share{
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .slider {
+    display: flex;
+    width: 60%;
+    max-width: 600px;
+  }
+
+  .produto {
+    margin: 2em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .compra {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+  }
+
+  .titulo {
+    display: none;
+  }
+
+  .titulo__maior {
+    display: flex;
+  }
+
+  .preço__texto {
+    font-size: 3em;
+  }
+
+  .descrição__list--elemento {
+    display: flex;
+    align-items: center;
+  }
+
+  .descrição__list--titulo,
+  .descrição__list--text {
+    padding: 0.2em;
+    align-items: center;
+  }
+
+  .form__campo {
+    border: none;
+
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

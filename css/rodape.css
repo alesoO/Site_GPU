@@ -1,0 +1,118 @@
+.rodape {
+    background-color: black;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    margin-top: 1.5rem !important;
+    position: relative;
+    bottom: 0;
+}
+.rodape__content--cima{
+    display: flex;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    margin-bottom: 1.2em;
+}
+
+.rodape__content--baixo{
+    margin-left: 1.2em;
+    border-top: 1px solid #76b900;
+    margin-right: 1.2em;
+}
+.rodape__figure{
+    display: flex;
+    margin: 0;
+}
+.rodape__figure--img{
+    margin: 0;
+    width: 7em;
+    height: 4em;
+}
+
+.rodape__list--titulo{
+    color: white;
+}
+
+.rodape__list--cima{
+    line-height: 1.4em;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.rodape__link--cima{
+    color: gray;
+    letter-spacing: 2px;
+    width: auto;
+    text-decoration: none;
+}
+
+.rodape__link--cima:hover{
+    color: #76b900;
+}
+
+.rodape__list{
+    display: flex;
+    font-size: 0.8em;
+}
+.rodape__link{
+    color: white;
+    letter-spacing: 2px;
+    width: auto;
+    text-decoration: none;
+    
+    margin: 0;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+.rodape__link :hover{
+    color: #76b900;
+}
+.rodape__copy{
+    margin-top: 10px;
+    font-size: 0.6em;
+    color: white;
+}
+.rodape__list--img{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.rodape__img{
+    width: 2.2em;
+    height: 2em;
+}
+.rodape__imagens{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-right: 1em;
+}
+
+@media screen and (max-width: 405px) {
+
+    .rodape__link{
+        text-align: center;
+    }
+    
+}
+@media screen and (min-width: 960px) {
+    
+    .rodape__content--cima{
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 1080px) {
+    
+    .rodape{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rodape__content--baixo{
+        border-top: none;
+        order: -1;
+    }
+
+}

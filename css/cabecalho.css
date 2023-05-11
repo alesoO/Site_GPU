@@ -1,0 +1,167 @@
+.cabecalho {
+  background-color: black;
+  color: #fff;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.cabecalho__list {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2em;
+}
+
+.cabecalho__link {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: auto;
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+.cabecalho__logo {
+  margin: 0;
+  display: flex;
+  padding: 0;
+
+}
+
+.cabecalho__logo--img {
+  width: 13em;
+}
+
+.cabecalho__nav2 {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.cabecalho__nav2 a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+
+.cabecalho__nav2 a:hover {
+  color: #76b900;
+}
+
+.bnt {
+  background-image: linear-gradient(135deg, #86d472, #76b900);
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #ffffff;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  height: 2.2em;
+  width: 6em;
+  justify-content: center;
+}
+
+.bnt:hover {
+  color: #fff !important;
+}
+
+
+.bnt .bntspan {
+  align-items: center;
+  border-radius: 6px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.bnt:hover .bntspan {
+  background: transparent;
+}
+
+.bnt__cad .bntspan__cad{
+  background: transparent;
+}
+
+.bnt:hover .bntspan__cad {
+  background: black;
+}
+
+.cabecalho__link--login{
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.cabecalho__link--cad{
+
+  width: 11em;
+}
+
+/*sidenav*/
+
+.cabecalho__nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.cabecalho__nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.cabecalho__nav a:hover {
+  color: #76b900;
+}
+
+.cabecalho__nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.cabecalho__menu {
+  margin-top: 55px;
+  margin-left: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  height: 27px;
+  left: 0;
+  position: absolute;
+}
+
+@media screen and (max-width: 1059px) {
+ 
+  .cabecalho__nav2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1060px) {
+
+  .cabecalho__menu {
+    display: none;
+  }
+
+  .cabecalho {
+    justify-content: space-between;
+  }
+
+}
